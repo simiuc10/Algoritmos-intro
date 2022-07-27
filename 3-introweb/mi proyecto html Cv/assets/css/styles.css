@@ -1,0 +1,24 @@
+.contenedor{
+    max-width: 50%;
+    margin: 0 auto;
+    border: solid 1px;
+    color: black;
+    padding: 100px;
+}
+
+.borde{ 
+    border-bottom: solid 2.5px;
+    color: aqua;
+    padding-top: 15px;
+}
+
+.imagelenguajes{
+    display: flex;
+    gap: 50px;
+}
+
+.Lenguajes{
+    display: flex;
+    gap: 120px;
+    text-align: center;
+}
