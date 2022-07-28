@@ -1,0 +1,76 @@
+.cuadro-padre{
+    background-color: coral;
+
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    /* Recuerden a word */
+    justify-content: space-between;
+
+
+    align-items: center;
+}
+
+.cuadro {
+    height: 100px;
+    width: 100px;
+
+
+    padding: 50px 40px 30px 20px;
+
+    margin: 20px 40px;
+
+    border: 10px solid yellow;
+
+    border-radius: 10px 20px 30px 40px;
+
+    display: grid;
+}
+
+.el-1{
+    background-color: blue;
+    align-self: flex-start;
+   flex-grow: 1;
+}   
+
+.el-2{
+    background-color: red;
+    flex-grow: 1;
+
+}
+
+.el-3{
+    background-color: pink;
+    flex-grow: 1;
+    
+}
+
+.el-4{
+    background-color: green;
+    flex-grow: 10;
+}
+
+.el-5{
+    background-color: darkorchid;
+    position: static;
+}
+
+.contenedor{
+    height: 100px;
+    background-color: aqua;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.fila{
+    display: flex;
+}
+
+.columna{
+    flex-grow: 1;
+}
