@@ -6,10 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a bootstrap</title>
     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/style.css">
 </head>
 <body>
-    <h1>Introducción a Bootstrap</h1>
-    <h2>Esto es solo una introducción</h2>
+   <!--  <h1>Introducción a Bootstrap</h1>
+   
+    <button class="btn-success">soy un botón</button> -->
+
+    <!-- uso del container -->
+    <div class="container border">
+        <header class="col-12 bg-primary text-white">
+            <h2>Esto es solo una introducción</h2>
+        </header>
+
+        <nav class="menu" class="col-12 bg-secondary">
+            <ul class="row w-100">
+            <li class="col">inicio</li>
+            <li class="col">pagina</li>
+            <li class="col">pagina</li>
+            <li class="col">pagina</li>
+            <li class="col">contacto</li>
+            </ul>
+
+
+        </nav>
+
+
+        <section class="col-12 border">
+            <div class="row">
+                
+                <section class="col-9 border">
+                    <h2>productos</h2>
+                    <div class="item row">
+                        <div class="item col-3 bg-primary m-2">
+                            producto 1
+                        </div>
+                        <div class="intem col-3 bg-secondary m-2">
+                            producto 2
+                        </div>
+                        <div class="item col-3 bg-danger m-2">
+                            producto 3
+                        </div>
+                    </div>
+
+                </section>
+    
+                <aside class="col-3">
+                    <h2>Barra lateral</h2>
+                   
+                    </div>
+    
+                </aside>
+            
+           
+        </section>
+       
+
+        <footer>
+            <footer class="col-lg-12 bg-info">esto es un footer</footer>
+        </footer>
+    </div>
+    
+    
+
+    
     <script type="text/javascript" src="JQuery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
 </body>
