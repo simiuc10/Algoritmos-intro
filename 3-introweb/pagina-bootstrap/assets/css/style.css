@@ -1,0 +1,21 @@
+.img-carousel{
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.img-carta{
+    height: 300px;
+    object-fit: cover;
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: aqua;
+    }
+}
+
+.caja{
+    position: relative;
+    top: -10px;
+}
