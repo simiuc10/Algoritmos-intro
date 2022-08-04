@@ -1,13 +1,21 @@
-/*Casa virgo*/
-let payaso = 112;
-let muneca = 75;
-let paquete = 1000;
+// CASA VIRGO
+'use scrict';
+let pedidoPayaso = Number(prompt("Ingresa el numero de payasos: "));
+let pedidoMunecas = Number(prompt("Ingresa el número de muñecas: "));
 
-let nPayaso = 10;
-let nMuneca = 5;
+let pesoPayaso = pedidoPayaso * 112;
+let pesoMunecas = pedidoMunecas * 75;
 
-function peso(nPayaso, nMuneca, payaso, muneca){
-    let peso = ((nPayaso*payaso)+(nMuneca*muneca))
-    alert (peso);
-    let = (peso/1000);
+let pesoTotal = pesoPayaso + pesoMunecas;
+let numPaquetes = 0; 
+
+
+if (pesoTotal <= 1000) {
+  numPaquetes = 1;
+} else if (pesoTotal > 1000) {
+   numPaquetes = Math.ceil(pesoTotal/1000);
 }
+
+alert(`Peso total de muñecas: ${pesoMunecas}g
+Peso total de payasos: ${pesoPayaso}g
+Paquetas totales a enviar: ${numPaquetes}`);
