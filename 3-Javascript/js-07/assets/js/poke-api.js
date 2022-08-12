@@ -1,5 +1,5 @@
 /* URL o consumir */
-const urlPokemon = "https://pokeapi.co/api/v2/pokemon/chikorita"
+const urlPokemon = "https://pokeapi.co/api/v2/pokemon/155"
 
 
 
@@ -9,10 +9,14 @@ const imgPokemon = document.getElementById("img-pokemon")
 console.log(imgPokemon);
 
 const idPokemon = document.getElementById("id-pokemon")
-console.log(imgpokemon);
+console.log(idPokemon);
 
-const nombrePokemon = document.getElementById("nombre-Pokemon")
+const nombrePokemon = document.getElementById("nombre-pokemon")
 console.log(nombrePokemon);
+
+const listaHabilidades = document.getElementById("lista-habilidades")
+console.log(listaHabilidades);
+
 /* Funciones */
 async function obtenerPokemon(url){
     const respuesta = await fetch(url)
@@ -20,17 +24,27 @@ async function obtenerPokemon(url){
  
     const pokemon = {
         nombre: datos.forms[0].name,
-        habilidad: datos.abilities,
-        numero: datos.id,
+        habilidades: datos.abilities,
+        id: datos.id,
         tipo: datos.types,
         imagen: datos.sprites.other["official-artwork"].front_default,
     }
 
+    // imagen, nombre y ID
     imgPokemon.src = pokemon.imagen;
-    idPokemon.textContent = `ID: ${pokemon.id}` ; //cONCATENAMOS EL VALOR JALADO CON EL ID:
+    idPokemon.textContent = `ID: ${pokemon.id}`;
     nombrePokemon.textContent = pokemon.nombre;
-    
 
-//console.log(pokemon.imagen); 
-}obtenerPokemon(urlPokemon)
+    // Habilidades
+    console.log(pokemon.habilidades);
 
+
+    let template = `<li class="list-group-item">Elemento agregado desde JS</li><li class="list-group-item">Elemento agregado desde JS</li><li class="list-group-item">Elemento agregado desde JS</li><li class="list-group-item">Elemento agregado desde JS</li><li class="list-group-item">Elemento agregado desde JS</li>`
+
+    listaHabilidades.innerHTML += template
+
+
+
+}
+
+obtenerPokemon(urlPokemon)
