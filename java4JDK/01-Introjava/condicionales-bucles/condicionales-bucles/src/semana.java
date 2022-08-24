@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class semana {
     public static void main(String[] args){
         System.out.println("semana");
