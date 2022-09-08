@@ -21,7 +21,14 @@ DROP TABLE clientes;
 INSERT INTO clientes (nombre, apellido, telefono, direccion)
 VALUES ('Sarada', 'Uchiha', 5213215465, 'comala'),
  ('Hinata', 'Hyuga', 321321456, 'konoha'),
- ('Ino', 'Yamanaka',321546221, 'konoha');
+ ('Ino', 'Yamanaka',321546221, 'konoha'),
+ ('Pedro', 'Páramo', '555555234', 'Comala'),
+('Raul', 'Sanchez', '555555234', 'Hidalgo'),
+('Victor', 'Fernández', '555555234', 'Comala'),
+('Magali', 'Quiroz', '555555234', 'CDMX'),
+('María', 'Vargas', '555555234', 'CDMX'),
+('Marina', 'Pardo', '555555234', 'CDMX');
+
 
 SELECT * FROM clientes;
 
